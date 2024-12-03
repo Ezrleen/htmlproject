@@ -1,8 +1,8 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around; /* Adjusted for better layout */
-    padding: 10px 20px; /* Adds padding around the header */
+    justify-content: space-around; 
+   
     
 }
 .container{
@@ -22,10 +22,10 @@ ul {
     cursor: pointer;
     padding: 10px 20px; 
     font-size: 16px; 
-    transition: background-color 0.2s ease-in, border-radius 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
     
 }
-
+body{}
 .headerbuttons:hover {
     background-color: #ddd; 
 }
@@ -151,3 +151,51 @@ ul {
         position: relative;
         top: -3px;
     }
+    .container {
+        
+        max-width: 1536px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      
+    
+      @media (max-width: 1536px) {
+        .container {
+          max-width: 1280px;
+        }
+      }
+      
+      @media (max-width: 1280px) {
+        .container {
+          max-width: 1024px;
+        }
+      }
+      
+
+      @media (max-width: 1024px) {
+        .container {
+          max-width: 768px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          max-width: 640px;
+        }
+      }
+      
+
+      @media (max-width: 640px) {
+        .container {
+          max-width: 475px;
+        }
+      }
+      
+     
+      @media (max-width: 475px) {
+        .container {
+          width: 100%;
+        }
+      }
