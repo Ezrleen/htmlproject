@@ -35,17 +35,10 @@ ul {
     height: auto;
 }
 /*  Login css*/
-body{
-    
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    
-}
 .inner{
     margin-top: 20%;
 }
-.inner{
+.main {
     width: 600px;
     height: 600px;
     background: url("innerbackground.jpg");
@@ -58,8 +51,8 @@ body{
     font-size: xx-large;
     display: flex;
     flex-direction: column;
-   
-    border-radius: 0.5%;
+    
+    border-radius: 1%;
 }
 .part1{
     font-family: "Funnel Sans", sans-serif;
@@ -83,7 +76,7 @@ body{
         background-color: #1b1a36;
         transition: background-color 0.3s ease-in, transform 0.1s linear; /* Fixed syntax */
         cursor: pointer;
-        border-radius: 2%;
+        border-radius: 5%;
         font-family: "Mark W05 Medium";
         font-size: 22px;
         

@@ -1,7 +1,7 @@
 export function generateLogin(){
     const logincontent=`
     <div class="main container">
-        <form action="">
+        <form action="#">
             <div class="inner">
                 <div> </div>
                 <div class="part1">Sign in
