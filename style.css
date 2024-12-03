@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjusted for better layout */
+    padding: 10px 20px; /* Adds padding around the header */
+    
+}
+.container{
+    max-width: 1536px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.headerbuttons {
+    border: none;
+    border-radius: 15%;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.2s ease-in, border-radius 0.2s ease-in;
+    
+}
+
+.headerbuttons:hover {
+    background-color: #ddd; 
+}
+
+.logoimg {
+    max-width: 150px; /* Limits the image size */
+    height: auto;
+}
