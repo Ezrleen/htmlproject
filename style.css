@@ -36,7 +36,7 @@ ul {
 }
 /*  Login css*/
 body{
-    background: url("login.jpg");
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -45,7 +45,7 @@ body{
 .inner{
     margin-top: 20%;
 }
-.main .container1 {
+.inner{
     width: 600px;
     height: 600px;
     background: url("innerbackground.jpg");
@@ -58,7 +58,7 @@ body{
     font-size: xx-large;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+   
     border-radius: 0.5%;
 }
 .part1{
