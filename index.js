@@ -16,13 +16,14 @@ loginButton.addEventListener("click", () => {
 
 
 mainButton.addEventListener("click", () => {
-    container.innerHTML = ""; 
+     
     container.innerHTML = generatemain();
     document.body.style.background = "url('./images/EaUnExCU8AAalKe.jpg')"; 
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundAttachment = "fixed";
+
 });
-window.onload=(() => {
-    
+window.onload = () => {
     container.innerHTML = generatemain();
-});
+};
