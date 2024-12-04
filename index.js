@@ -26,4 +26,3 @@ window.onload=(() => {
     
     container.innerHTML = generatemain();
 });
-window.addEventListener("")
