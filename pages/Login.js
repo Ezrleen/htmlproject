@@ -3,7 +3,7 @@ export function generateLogin(){
     <div class="main container">
         <form action="#">
             <div class="inner">
-                <div> </div>
+                
                 <div class="part1">Sign in
                 </div>
                 <div class="part2">
