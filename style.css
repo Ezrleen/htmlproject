@@ -531,3 +531,65 @@ nav > button {
     .icondiv{
       text-align: center;
     }
+    footer{
+      background-color: rgb(17,17,17);
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      justify-content:space-evenly;
+      align-content: center;
+    } 
+    .footericon{
+      display: flex;
+      gap: 15px;
+      
+      color: white;
+      
+
+    }
+    
+    .riotlogo{
+      
+      margin-bottom: 2%;
+      
+    }
+    .riotlogo path {
+      fill: white;
+      transition: fill 0.3s ease-in-out;
+  }
+  .riotlogo:hover path{
+    fill:#808080;
+  }
+    .footericon button{
+      color: white;
+      border: white;
+      border-radius: 20px;
+      background-color: #292929;
+    }
+    footer>div{
+      margin-bottom: 1%;
+      margin-top: 1%;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .footertext{
+      font-family: "FF Mark W05", Arial, sans-serif;
+      margin: 0 auto 10px auto;
+      max-width: 640px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 140%;
+      text-align: center;
+      word-break: keep-all;
+      color: #7e7e7e;
+    }
+    .btn.btn-outline-primary.a1{
+      color: white;
+      border: none;
+      gap: 10%;
+    }

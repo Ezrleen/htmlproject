@@ -1,12 +1,14 @@
 import { generateLogin } from "./pages/Login.js";
 import { generatebeforefooter } from './pages/beforefooter.js';
 import { generatemain } from "./pages/main.js";
+import { generatemainfooter } from "./pages/mainfooter.js";
 
 const loginButton = document.getElementById("login");
 const mainButton = document.getElementById("main");
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container1part2");
 const beforefooter = document.querySelector(".beforefooter");
+const footer=document.querySelector(".footer");
 
 // Event listener for champion icons
 function reattachEventListeners() {
@@ -87,24 +89,26 @@ mainButton.addEventListener("click", () => {
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
-
     reattachEventListeners();
-
     const signin2 = document.getElementById("buttonsign");
     signin2.addEventListener("click", () => {
         container.innerHTML = "";
         container2.innerHTML = "";
         container.innerHTML = generateLogin(); 
+        footer.innerHTML="";
         beforefooter.style.visibility = 'hidden';
         document.body.style.background = "url('./images/login.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
     });
+    footer.innerHTML=generatemainfooter();
+    
 });
 
 loginButton.addEventListener("click", () => {
     container.innerHTML = "";
     container2.innerHTML = "";
+    footer.innerHTML="";
     beforefooter.style.visibility = 'hidden';
     container.innerHTML = generateLogin(); 
     document.body.style.background = "url('./images/login.jpg')";
@@ -127,6 +131,7 @@ window.onload = () => {
     </div>
     `;
     beforefooter.style.visibility = 'visible';
+    footer.innerHTML=generatemainfooter();
 
     // Reattach event listeners when page loads
     reattachEventListeners();
@@ -135,10 +140,12 @@ window.onload = () => {
     signin2.addEventListener("click", () => {
         container.innerHTML = "";
         container2.innerHTML = "";
+        footer.innerHTML="";
         container.innerHTML = generateLogin(); 
         beforefooter.style.visibility = 'hidden';
         document.body.style.background = "url('./images/login.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
+
     });
 };
