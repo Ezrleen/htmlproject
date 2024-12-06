@@ -310,12 +310,15 @@ nav > button {
         overflow: hidden;
         color: white;
         width:max-content;
-
+        position: relative;
+        margin-bottom: 10%;
+        
       }
       .videocontainer {
         position: relative;
         width: 100vw; 
         height: 50vh; 
+        
         
         
         background-color: rgba(0, 0, 0, 0.8);
@@ -327,9 +330,13 @@ nav > button {
         object-fit:cover;
         position: absolute;
         z-index: -1;
+        
       }
       .container1text{
         max-width: 50%;
+        
+        position: absolute;
+        top: 16%;
         
     
         padding: 3%;
@@ -341,10 +348,104 @@ nav > button {
 
 
 
+      @keyframes appear {
+        from{
+          opacity: 0 ;
+          scale: 0.5;
+        }
+        to{
+          opacity: 1;
+          scale: 1;
+        }
+        
+      }
+      
+      .block{
+        width: 50%; height: 90vh;
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range:entry 0 cover 40%;
+        
+      }
+      .wiw{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range:entry 0 cover 40%;
+        display: flex;
+        justify-content: center;
+        
+        
+      }
+      .block>img{
+        width: 100%;
+        height: 100%;
+        
+        
+      }
+      .container1part2text{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .containerbuttons{
+        display: flex;
+        
+        width: 100%;
+        justify-content: center;
+        gap: 15%;
+        margin-top: 4%;
+      }
+     
 
 
+      .btn.btn-primary.btn-lg{
+        margin-left: 20%;
+        width: 190px;
+        border-radius: 0%; 
+        background-color: rgb(200, 170, 110); 
+        color: black;
+        
+      }
+      .btn.btn-primary.btn-lg:hover{
+        background-color: #d3bb8b
+      }
+      .btn.btn-primary.btn-lg.b{
+        border-radius: 0%;
+        background-color: #59c1de; 
+        color:black;
+        width: 190px;
+        font-family: 'Spiegel';
+      }
+      .btn.btn-primary.btn-lg.b:hover{
+        background-color: rgb(200, 170, 110);
+      }
 
-
-
-
-
+      @font-face {
+        font-family: "SpiegelSans";
+        src: url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.eot");
+        src: url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.svg#SpiegelSans")format("svg");
+    }
+    
+    @font-face {
+      font-family: "Beaufort for LOL";
+      src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
+      src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#Beaufort for LOL Bold")format("svg");
+  }
+  .text3container1part2 {
+    margin-left: 5%;
+    text-align: center;
+    font-family: 'SpiegelSans', sans-serif; 
+    font-weight: lighter;
+}
+    

@@ -53,7 +53,7 @@ window.onload = () => {
     container2.innerHTML = `
     <div class="videocontainer">
         <video autoplay muted loop>
-            <source src="images/Test.mp4" type="video/mp4">
+            <source  class="img-fluid" src="images/Test.mp4" type="video/mp4">
         </video>
         <div class="container1text">
             <div><h1>Join us, don't waste your time</h1></div>
