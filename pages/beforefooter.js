@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/b621d1ffb46493164fd62fb7a83ab0ff?family=Mark+W05+Medium" rel="stylesheet">
-    
-    
-    
-</head>
-<body >
-    <header class="header-container">
-        <div class="logo">
-            <img  class="logoimg" src="https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.78.34/assets/arcane2RiotLogoSmall.svg" alt="Riot Logo">
-          </div>
-          
-        <nav>
-            <ul>
-                <li><button class="headerbuttons" id="main">Home</button></li>
-                <li> <button class="headerbuttons" id="login">Log In</button></div></li>
-                <li><button class="headerbuttons"> SIGN UP</button></li>
-                <li> <button class="headerbuttons">Champions</button> </li>
-                <li> <button class="headerbuttons">Lore</button> </li>
-                <li> <button class="headerbuttons">Arcane</button></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-
-    </div>
-    <div class="container1part2"></div>
-    <div class="beforefooter">
-        <div class="wiw">
+export function generatebeforefooter(){
+    const beforefooter=`
+    <div class="wiw">
             <div class="container1part2text">
-                <div style="font-size:22px;    font-family: Spiegel, sans-serif; color: rgb(10, 20, 40)">CHOOSE YOUR</div>
-
+                <div style="unicode-bidi: isolate; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; unicode-bidi: isolate">CHOOSE YOUR</div>
                 <h1 style="font-weight: 900; font-family: 'Beaufort for LOL', sans-serif; font-style: italic;font-size: 64px;line-height: 72px;color: rgb(10, 20, 40);word-break: normal;">CHAMPION</h1>
                 <div class="text3container1part2">Whether you like to dive straight into the fray, support your teammates, or something in between, there’s a spot for you on the Rift.</div>
                 <div class="containerbuttons">
@@ -83,9 +45,6 @@
             </div>
             
         </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="module" src="index.js"></script>
-</body>
-</html>
+    `;
+    return beforefooter;
+}

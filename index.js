@@ -1,10 +1,13 @@
 import { generateLogin } from "./pages/Login.js";
+import { generatebeforefooter } from './pages/beforefooter.js';
 import { generatemain } from "./pages/main.js";
+
 
 const loginButton = document.getElementById("login");
 const mainButton = document.getElementById("main");
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container1part2");
+const beforefooter=document.querySelector(".beforefooter");
 const fighter=document.getElementById("fighter");
 const champ_change=document.querySelector(".champ-change");
 const champion_name=document.getElementById("champion-name");
@@ -13,6 +16,9 @@ const insideBlock = document.querySelector('.insideblock');
 const marksmen=document.getElementById("marksmen");
 const support=document.getElementById("support");
 const tank=document.getElementById("tank");
+
+
+
 fighter.addEventListener("click",()=>{
     champ_change.src = "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/70c26e49de8a2c79ac3de144772d2debd195edff-1628x1628.png?auto=format&fit=fill&q=80&w=736";
     champion_name.innerHTML=`YASUO`;
@@ -60,6 +66,7 @@ support.addEventListener("click",()=>{
 loginButton.addEventListener("click", () => {
     container.innerHTML = "";
     container2.innerHTML = "";
+    beforefooter.style.visibility = 'hidden';
     container.innerHTML = generateLogin(); 
     document.body.style.background = "url('./images/login.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
@@ -74,12 +81,15 @@ mainButton.addEventListener("click", () => {
             <source src="images/Test.mp4" type="video/mp4">
         </video>
         <div class="container1text">
-            <div><h1>Join us, don't waste your time</h1></div>
+            <div class="container1texth1"><h1 >Join us, don't waste your time</h1></div>
             <div><h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sed cupiditate asperiores reiciendis officiis a, illo iure libero corrupti aut at, minus labore fuga fugit nulla amet voluptates? Animi, harum.</h5></div>
             <button type="button" class="btn btn-primary btn-lg" id="buttonsign">Sign up</button>
         </div>
     </div>
     `;
+
+    beforefooter.style.visibility = 'visible';
+    beforefooter.innerHTML=generatebeforefooter();
     document.body.style.background = "url('./images/EaUnExCU8AAalKe.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
@@ -89,12 +99,13 @@ mainButton.addEventListener("click", () => {
         container.innerHTML = "";
         container2.innerHTML = "";
         container.innerHTML = generateLogin(); 
+        beforefooter.style.visibility = 'hidden';
         document.body.style.background = "url('./images/login.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
         });
     
-
+    
     
     
 });
@@ -107,12 +118,14 @@ window.onload = () => {
             <source  class="img-fluid" src="images/Test.mp4" type="video/mp4">
         </video>
         <div class="container1text">
-            <div><h1>Join us, don't waste your time</h1></div>
-            <div><h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sed cupiditate asperiores reiciendis officiis a, illo iure libero corrupti aut at, minus labore fuga fugit nulla amet voluptates? Animi, harum.</h5></div>
+            <div><h1 class="container1texth1">JOIN US  DONT WASTE MORE TIME</h1></div>
+            <div><h5 class="container1texth5">Enter the League of Legends battleground, where every champion has a story and every match is a new adventure. Choose your role, master your skills, and rise to the challenge. The Rift awaits</h5></div>
             <button type="button" class="btn btn-primary btn-lg" id="buttonsign">Sign up</button>
         </div>
     </div>
     `;
+    
+    beforefooter.style.visibility = 'visible';
 
     
     const signin2 = document.getElementById("buttonsign");
@@ -120,8 +133,10 @@ window.onload = () => {
         container.innerHTML = "";
         container2.innerHTML = "";
         container.innerHTML = generateLogin(); 
+        beforefooter.style.visibility = 'hidden';
         document.body.style.background = "url('./images/login.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
         });
     };
+

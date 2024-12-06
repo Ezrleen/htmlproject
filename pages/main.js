@@ -65,6 +65,7 @@ export function generatemain(){
         </div>
     </div>
     
+    
     `;
     return maincontent;
     
