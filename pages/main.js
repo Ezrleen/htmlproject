@@ -2,7 +2,6 @@ export function generatemain(){
     const maincontent=`
     <div class="container2">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -40,38 +39,33 @@ export function generatemain(){
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-            <div class="container3">
-                <div class="zz">
-                    <div class="cont3img"> <img src="images/vlad.png" alt=""></div>
-                    <div class="cont3text">
-                        <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                        <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
-                    </div>
-                </div>
-                <div class="zz">
-                    <div class="cont3img"> <img src="images/slide1.jpg" alt=""></div>
-                    <div class="cont3text">
-                        <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                        <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
-                    </div>
-                </div>
-                <div class="zz">
-                    <div class="cont3img"> <img src="images/wp10432161.jpg" alt=""></div>
-                    <div class="cont3text">
-                        <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                        <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="container4">
-                <div>aaaaaaaaaa</div>
-            </div>
-            
-            
         </div>
+        <div class="container3">
+            <div class="zz">
+                <div class="cont3img"> <img src="images/vlad.png" alt=""></div>
+                <div class="cont3text">
+                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
+                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                </div>
+            </div>
+            <div class="zz">
+                <div class="cont3img"> <img src="images/slide1.jpg" alt=""></div>
+                <div class="cont3text">
+                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
+                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                </div>
+            </div>
+            <div class="zz">
+                <div class="cont3img"> <img src="images/wp10432161.jpg" alt=""></div>
+                <div class="cont3text">
+                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
+                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     `;
     return maincontent;
+    
 }
