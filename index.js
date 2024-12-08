@@ -10,6 +10,7 @@ const container2 = document.querySelector(".container1part2");
 const beforefooter = document.querySelector(".beforefooter");
 const footer=document.querySelector(".footer");
 
+
 // Event listener for champion icons
 function reattachEventListeners() {
     const fighter = document.getElementById("fighter");
@@ -102,8 +103,13 @@ mainButton.addEventListener("click", () => {
         document.body.style.backgroundSize = "cover";
     });
     footer.innerHTML=generatemainfooter();
+    const morechamp = document.getElementById("morechamp");
+    morechamp.addEventListener("click", () => {
+        window.open('https://www.leagueoflegends.com/en-us/champions/', '_blank');
+    });
     
 });
+
 
 loginButton.addEventListener("click", () => {
     container.innerHTML = "";
@@ -111,7 +117,7 @@ loginButton.addEventListener("click", () => {
     footer.innerHTML="";
     beforefooter.style.visibility = 'hidden';
     container.innerHTML = generateLogin(); 
-    document.body.style.background = "url('./images/login.jpg')";
+    document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
 });
@@ -146,6 +152,10 @@ window.onload = () => {
         document.body.style.background = "url('./images/login.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
+        
 
+    });
+    morechamp.addEventListener("click",()=>{
+        window.open('https://www.leagueoflegends.com/en-us/champions/', '_blank');
     });
 };
