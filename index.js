@@ -136,6 +136,7 @@ window.onload = () => {
         </div>
     </div>
     `;
+    beforefooter.innerHTML=generatebeforefooter();
     beforefooter.style.visibility = 'visible';
     footer.innerHTML=generatemainfooter();
 
