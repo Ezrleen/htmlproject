@@ -29,6 +29,15 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+.music svg{
+  stroke:red;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.music svg:hover{
+
+  transform: scale(1.5);
+}
 .container {
   position: relative;
   max-width: 1536px;
@@ -61,6 +70,7 @@ ul {
 .logoimg {
     max-width: 150px; 
     height: auto;
+    display: flex;
 }
 nav > button {
   background-color: rgba(255, 255, 255, 0.5); 
