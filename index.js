@@ -9,6 +9,20 @@ const container = document.querySelector(".container");
 const container2 = document.querySelector(".container1part2");
 const beforefooter = document.querySelector(".beforefooter");
 const footer=document.querySelector(".footer");
+//sing in buttons&inputs
+
+
+
+//function to verify that the user didnt enter a user & password;
+
+function updateButtonSignIn(user,password,singinbutton) {
+
+    if (user.value.length !== 0 && password.value.length !== 0) {
+       
+        singinbutton.style.cursor = 'pointer';
+        singinbutton.removeAttribute('disabled');
+    }};
+
 
 
 // Event listener for champion icons
@@ -98,16 +112,18 @@ mainButton.addEventListener("click", () => {
         container.innerHTML = generateLogin(); 
         footer.innerHTML="";
         beforefooter.style.visibility = 'hidden';
-        document.body.style.background = "url('./images/login.jpg')";
+        document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
-    });
+        const user = document.getElementById("user");
+        const password = document.getElementById("password");
+        const singinbutton=document.getElementById("submitbuttonsingin");
+        user.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+        password.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+        
+        });
     footer.innerHTML=generatemainfooter();
-    const morechamp = document.getElementById("morechamp");
-    morechamp.addEventListener("click", () => {
-        window.open('https://www.leagueoflegends.com/en-us/champions/', '_blank');
-    });
-    
+
 });
 
 
@@ -117,9 +133,17 @@ loginButton.addEventListener("click", () => {
     footer.innerHTML="";
     beforefooter.style.visibility = 'hidden';
     container.innerHTML = generateLogin(); 
+    const user = document.getElementById("user");
+    const password = document.getElementById("password");
+    const singinbutton=document.getElementById("submitbuttonsingin");
     document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
+    user.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+    password.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+
+    
+    
 });
 
 window.onload = () => {
@@ -145,18 +169,25 @@ window.onload = () => {
 
     const signin2 = document.getElementById("buttonsign");
     signin2.addEventListener("click", () => {
-        container.innerHTML = "";
-        container2.innerHTML = "";
-        footer.innerHTML="";
-        container.innerHTML = generateLogin(); 
-        beforefooter.style.visibility = 'hidden';
-        document.body.style.background = "url('./images/login.jpg')";
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
-        
+
+    container.innerHTML = "";
+    container2.innerHTML = "";
+    footer.innerHTML="";
+    beforefooter.style.visibility = 'hidden';
+    container.innerHTML = generateLogin(); 
+    
+    document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    const user = document.getElementById("user");
+    const password = document.getElementById("password");
+    const singinbutton=document.getElementById("submitbuttonsingin");
+    user.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+    password.addEventListener("blur", () => updateButtonSignIn(user, password, singinbutton));
+
 
     });
-    morechamp.addEventListener("click",()=>{
-        window.open('https://www.leagueoflegends.com/en-us/champions/', '_blank');
-    });
+    
+    
+    
 };

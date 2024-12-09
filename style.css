@@ -182,9 +182,13 @@ nav > button {
         accent-color: #2e3d67
         
     }
+
     .checkbox{
-      font-size: 15px;
+      font-size: 35px;
       align-items: center;
+      margin-bottom: 10%;
+      margin-top: 5%;
+      
     
       
       
@@ -192,8 +196,33 @@ nav > button {
   
     .checkbox b{
       position: relative;
-      top: -3px;
+      top: 3px;
   }
+
+    .stay {
+        transform: scale(2);  
+        margin-right: 20px;      
+  } 
+  .submitbutton1{
+   
+    text-align: center;
+  }
+  
+  #submitbuttonsingin{
+    height: 72px;
+    border-radius:27px;
+    padding:0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: not-allowed;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 90px;
+    background: transparent;
+    background-color: #ced1d8;
+    backdrop-filter: blur(5px);
+  }
+
   
   .carousel-inner{
     border: 2px solid;
