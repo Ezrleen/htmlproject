@@ -732,3 +732,9 @@ nav > button {
       transition: color 0.1s ease-in-out;
       color:#6600cc; 
 }
+  .error {
+    color: red;
+  }
+  #submit-btn {
+    cursor: not-allowed;
+}

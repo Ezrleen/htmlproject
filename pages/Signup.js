@@ -5,25 +5,28 @@ export function generatesingup(){
             <h2>Create Your League Account</h2>
             <form id="signupForm">
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input class="forminput" type="text" id="username" name="username" placeholder="Choose your summoner name" required minlength="3">
-                    
+                    <label for="usernamesignup">Username</label>
+                    <input class="forminput" type="text" id="usernamesignup" name="username" placeholder="Choose your summoner name" required minlength="3">
+                    <div class="error" style="margin-top: 4px;"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="error" style="margin-top: 4px;"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="8">
+                    <div class="error" style="margin-top: 4px;"></div>
                 </div>
 
                 <div class="form-group">
                     <label for="confirmPassword">Confirm Password</label>
                     <input 
                         type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat your password" required>
+                        <div class="error" style="margin-top: 4px;"></div>
                 </div>
 
                 <div class="form-group">
@@ -42,12 +45,15 @@ export function generatesingup(){
                         <option value="tr">Turkey (TR)</option>
                         <option value="oce">Oceania (OCE)</option>
                     </select>
+                    <div class="error" style="margin-top: 4px;"></div>
                 </div>
+
                 <div class="terms-group">
                     <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
                     <label for="acceptTerms">I accept the Terms of Service and Privacy Policy</label>
                 </div>
-                <button type="submit" class="submit-btn">Create Account</button>
+
+                <button disabled id="submit-btn" class="submit-btn">Create Account</button>
             </form>
         </div>
     </div>

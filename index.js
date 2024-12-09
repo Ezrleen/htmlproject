@@ -3,6 +3,7 @@ import { generatebeforefooter } from './pages/beforefooter.js';
 import { generatemain } from "./pages/main.js";
 import { generatemainfooter } from "./pages/mainfooter.js";
 import {generatesingup} from "./pages/Signup.js";
+import {generatesingupfunctions} from "./pages/Signupfunctions.js";
 
 const loginButton = document.getElementById("login");
 const mainButton = document.getElementById("main");
@@ -17,12 +18,15 @@ signup.addEventListener("click",()=>{
     footer.innerHTML="";
     beforefooter.style.visibility = 'hidden';
     container.innerHTML = generatesingup(); 
+    generatesingupfunctions();
+    document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    
 });
-//sing in buttons&inputs
 
-
-
-//function to verify that the user didnt enter a user & password;
+//LOGin buttons&inputs
+//function to verify that the user didnt enter a blank username&password;
 
 function updateButtonSignIn(user,password,singinbutton) {
 
@@ -200,3 +204,6 @@ window.onload = () => {
     
     
 };
+/* sign up functions*/
+
+        
