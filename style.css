@@ -636,3 +636,99 @@ nav > button {
       border: none;
       gap: 10%;
     }
+
+
+    /* Sign up styles*/
+    .signupcontainer {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: auto;
+      margin-top: 10%;
+      color: #f0e6d2;
+      width: 50%;
+      position: relative;
+      
+  }
+
+  .signup-container {
+      background-color: rgba(255, 255, 255, 0.3); 
+      backdrop-filter: blur(10px); 
+      border-radius: 8px;
+      padding: 30px;
+
+      
+      max-width:400px ;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+  }
+
+  .signup-container h2 {
+      text-align: center;
+      color: #c89b3f;
+      margin-bottom: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #f0e6d2;
+      font-weight: bolder;
+  }
+
+  .form-group input, 
+  .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #5b5a56;
+      background-color: #2c3e50;
+      color: #f0e6d2;
+      border-radius: 4px;
+      cursor:pointer;
+  }
+
+  .form-group input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+  }
+
+  .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #c89b3f;
+      color: #0a1428;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .submit-btn:hover {
+      background-color: #a77d3b;
+  }
+
+  .terms-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  }
+
+  .terms-group label {
+      margin-left: 10px;
+  }
+  .forminput:focus{
+      outline: 1px solid rgb(236, 236, 236);
+      outline-offset: .15rem;
+
+  }
+  .form-group:focus-within label{
+      
+      transition: color 0.1s ease-in-out;
+      color:#6600cc; 
+}

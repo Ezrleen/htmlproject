@@ -2,6 +2,7 @@ import { generateLogin } from "./pages/Login.js";
 import { generatebeforefooter } from './pages/beforefooter.js';
 import { generatemain } from "./pages/main.js";
 import { generatemainfooter } from "./pages/mainfooter.js";
+import {generatesingup} from "./pages/Signup.js";
 
 const loginButton = document.getElementById("login");
 const mainButton = document.getElementById("main");
@@ -9,6 +10,14 @@ const container = document.querySelector(".container");
 const container2 = document.querySelector(".container1part2");
 const beforefooter = document.querySelector(".beforefooter");
 const footer=document.querySelector(".footer");
+const signup=document.getElementById("signup");
+signup.addEventListener("click",()=>{
+    container.innerHTML = "";
+    container2.innerHTML = "";
+    footer.innerHTML="";
+    beforefooter.style.visibility = 'hidden';
+    container.innerHTML = generatesingup(); 
+});
 //sing in buttons&inputs
 
 
