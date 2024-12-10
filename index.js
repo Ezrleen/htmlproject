@@ -4,7 +4,11 @@ import { generatemain } from "./pages/main.js";
 import { generatemainfooter } from "./pages/mainfooter.js";
 import {generatesingup} from "./pages/Signup.js";
 import {generatesingupfunctions} from "./pages/Signupfunctions.js";
+import {generatearcanes1} from "./pages/arcanes1.js";
+import {generatearcane2} from "./pages/arcane2.js";
+import {generatearcaneindex} from "./pages/arcaneindex.js";
 
+const arcane=document.getElementById("arcane");
 const loginButton = document.getElementById("login");
 const mainButton = document.getElementById("main");
 const container = document.querySelector(".container");
@@ -12,6 +16,30 @@ const container2 = document.querySelector(".container1part2");
 const beforefooter = document.querySelector(".beforefooter");
 const footer=document.querySelector(".footer");
 const signup=document.getElementById("signup");
+arcane.addEventListener("click",()=>{
+    container.innerHTML = "";
+    container2.innerHTML = "";
+    container.innerHTML = generatearcaneindex(); 
+    document.body.style.background = "url('./images/arcane2_desktop_default_2x.jpg')";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    beforefooter.style.visibility = 'hidden';
+    const generatearcane=document.getElementById("generatearcane");
+    generatearcane.addEventListener("click",()=>{
+        container.innerHTML = "";
+        container2.innerHTML = "";
+        beforefooter.style.visibility = 'hidden';
+        container.innerHTML = generatearcanes1();
+    });
+    const arcane2=document.getElementById("generatearcane2");
+    arcane2.addEventListener("click",()=>{
+        container.innerHTML = "";
+        container2.innerHTML = "";
+        beforefooter.style.visibility = 'hidden';
+        container.innerHTML = generatearcane2();
+
+    })
+})
 signup.addEventListener("click",()=>{
     container.innerHTML = "";
     container2.innerHTML = "";
@@ -234,4 +262,3 @@ const svgElement = document.getElementById('music-icon');
         }
     });
 
-        

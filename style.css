@@ -41,6 +41,7 @@ header {
 .container {
   position: relative;
   max-width: 100vw;
+  padding: 0;
 
 
 }
@@ -745,4 +746,203 @@ nav > button {
   }
   #submit-btn {
     cursor: not-allowed;
+}
+
+    /*arcane index*/
+    .arcanecontaier{
+      display: flex;
+      justify-content:flex-end;
+      gap: 50px;
+      backdrop-filter: blur(10px);
+      border: 1px solid white;
+      margin-top: 20%;
+      border-radius: 25px;
+    }
+    .innerarcane{
+      border: 1px solid red;
+      width: 15%;
+      background-color: #1e2436;
+
+      
+      
+    }
+    .img{
+      width: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease;
+    }
+    .img:hover{
+      filter: brightness(70%);
+    }
+    .textarcane{
+      text-align: center;
+      margin: 10%;
+
+      
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    /*arcane watch index*/
+    .mainwatch{
+      
+    }
+    .arcana{
+      display: flex;
+      gap: 30px;
+      border: 1px solid rgb(0, 0, 0);
+      padding-top: 5%;
+      max-width: 1563px;
+      margin: auto;
+    }
+
+    
+    .arcaneimg{
+
+      
+      height: 40vh;
+      
+    }
+    .arcaneimg img{
+      height: 100%;
+
+    }
+    .arcana .card{
+      height: 40vh;
+      width: 50%;
+      margin-top: -43px;
+      display: flex;
+      font-family:'NeoSansStd-Bold',sans-serif ;
+      background: none;
+      color: white;
+      
+    }
+    .card-body{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .arcanecard {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+
+    }
+    .arcanecard button{
+      padding: 8px;
+      width: 20%;
+      background: none;
+      color: white;
+      border-radius: 20px;
+      border: 1px solid ;
+      transition: color 0.3s ease-in-out;
+      
+    }
+    .arcanecard button:hover{
+      color: blue;
+
+    }
+  
+    .cardtextdiv{
+      display: flex;gap: 50px;
+    }
+  
+
+
+    .arcanecard button {
+      padding: 8px;
+      width: 20%;
+      background: none;
+      color: white; /* Default text color */
+      border-radius: 20px;
+      border: 1px solid white; /* Add a border to match the text color */
+      transition: color 0.3s ease; /* Smooth transition for color change */
+    }
+    
+
+   .btn.btn-primary{
+    width: 25%;
+   }
+   .trigger{
+    color: rgb(235, 0, 0);
+   }
+   @font-face {
+    font-family: "NeoSansStd-Bold";
+    src: url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.eot");
+    src: url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d1f2099a25acf9dd1d557c498cda679e.svg#NeoSansStd-Bold")format("svg");
+}
+/* to draw the triangle*/
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; 
+  border-right: 50px solid transparent; 
+  border-top: 100px solid rgb(18, 6, 179);;     
+  margin: 5px auto 30px auto;
+ 
+}
+
+.triangle-down-black {
+
+  border-top-color: rgb(18, 7, 68);
+}
+
+.arcana2{
+  max-width: 1563px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-direction: row-reverse;
+}
+.arcana2watch {
+  width: 25%;
+  position: relative;
+  transition: transform 0.2s ease;
+  padding: 5px;
+  height: 300px;
+}
+.arcana2watch div{
+
+  width: 100%;
+  height: 100%;
+}
+.arcana2watch img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(70%);
+  
+}
+
+.part1bg{
+  background-color: #DFDBE5;
+  background-image: url("./images/Luxury\ Circles\ Background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.arcana2watchtext{
+  color: rgb(255, 255, 255);
+  position: absolute;
+  text-align: center;
+  top: 240px;
+  font-weight: 500;
+  font-size: 29px;
+}
+.arcana2watch:hover
+
+{
+  transform: scale(1.1);
 }
