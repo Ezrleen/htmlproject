@@ -18,6 +18,7 @@ const footer=document.querySelector(".footer");
 const signup=document.getElementById("signup");
 function generatearcane(){
     arcane.addEventListener("click",()=>{
+        container.style.maxWidth = "100vw";
         container.innerHTML = "";
         container2.innerHTML = "";
         container.innerHTML = generatearcaneindex(); 
@@ -42,6 +43,12 @@ function generatearcane(){
         })
     })
 }
+function checkContainerWidth() {
+    
+}
+
+
+
 SIGNUP();
 MAIN();
 LOGIN();
@@ -126,6 +133,7 @@ function reattachEventListeners() {
 
 
 window.onload = () => {
+    container.style.maxWidth = "1536px";
     container.innerHTML = generatemain();
     container2.innerHTML = `
     <div class="videocontainer">
@@ -227,6 +235,7 @@ function LOGIN(){
 }
 function MAIN(){
     mainButton.addEventListener("click", () => {
+        container.style.maxWidth = "1536px";
         container.innerHTML = generatemain();
         container2.innerHTML = `
         <div class="videocontainer">
@@ -251,6 +260,7 @@ function MAIN(){
         const signin2 = document.getElementById("buttonsign");
         signin2.addEventListener("click", () => {
             container.innerHTML = "";
+            container.style.maxWidth = "1536px";
             container2.innerHTML = "";
             container.innerHTML = generateLogin(); 
             footer.innerHTML="";
