@@ -42,24 +42,24 @@ export function generatemain(){
         </div>
         <div class="container3">
             <div class="zz">
-                <div class="cont3img"> <img src="images/vlad.png" alt=""></div>
+                <div class="cont3img"> <img src="images/1.png" alt=""></div>
                 <div class="cont3text">
-                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                    <div class="text1"><h5><strong>Nightmare on Reroll Street: Part 1 | Into the Arcane Launch Cinematic</strong></h5></div>
+                    <div class="text2">TFT’s latest set goes Into the Arcane on Nov 20 with exclusive playable characters</div>
                 </div>
             </div>
             <div class="zz">
-                <div class="cont3img"> <img src="images/slide1.jpg" alt=""></div>
+                <div class="cont3img"> <img src="images/2.png" alt=""></div>
                 <div class="cont3text">
-                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                    <div class="text1"><h5><strong>Becoming Unbound | Mini Cinematic - Teamfight Tactics</strong></h5></div>
+                    <div class="text2">Meet our newest Tactician type in patch 14.23: Unbound Champions!</div>
                 </div>
             </div>
             <div class="zz">
-                <div class="cont3img"> <img src="images/wp10432161.jpg" alt=""></div>
+                <div class="cont3img"> <img src="images/3.png" alt=""></div>
                 <div class="cont3text">
-                    <div class="text1"><h5><strong>Dev Update: Season 1 Reveal, Gameplay Preview & Ranked Resets</strong></h5></div>
-                    <div class="text2">hedha bch nenzelo alih bch ykolna fazet</div>
+                    <div class="text1"><h5><strong>Arcane Season 2 Across Our Games</strong></h5></div>
+                    <div class="text2">What League, TFT, VALORANT, Wild Rift, and Legends of Runeterra are doing to celebrate Arcane’s final season.</div>
                 </div>
             </div>
         </div>

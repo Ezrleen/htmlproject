@@ -762,6 +762,7 @@ nav > button {
       border: 1px solid red;
       width: 15%;
       background-color: #1e2436;
+      margin-right: 50px;
 
       
       
@@ -945,4 +946,8 @@ nav > button {
 
 {
   transform: scale(1.1);
+}
+.popover-header {
+  background-color: #343a40; 
+  color: #f8f9fa; 
 }
