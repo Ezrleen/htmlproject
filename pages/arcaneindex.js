@@ -25,10 +25,7 @@ export function generatearcaneindex() {
     `;
 
     
-    setTimeout(() => {
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
-    }, 0); 
+
 
     return indexcontent;
 }
